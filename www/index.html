@@ -24,6 +24,7 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="https://cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+  <link href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" rel="stylesheet" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -513,10 +514,8 @@
       <div class="container-fluid" data-aos="fade-up">
 
         <div class="row g-0">
-          <div class="col-lg-6 venue-map-static">
-            <!--
-            <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-3.056259155273438%2C56.43051596789727%2C-2.9002189636230473%2C56.49784931421582&amp;layer=mapnik" frameborder="0" style="border:0" allowfullscreen=""></iframe><br/><small><a href="https://www.openstreetmap.org/#map=13/56.46420/-2.97824">View Larger Map</a></small>
-          -->
+          <div class="col-lg-6 venue-map">
+            <div id="map"></div>
           </div>
 
           <div class="col-lg-6 venue-info">
@@ -1162,6 +1161,7 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[6]='MMERGE6';ftypes[6]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script></div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
